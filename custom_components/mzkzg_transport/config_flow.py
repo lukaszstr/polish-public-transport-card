@@ -1225,7 +1225,7 @@ class MzkzgTransportConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             seen = set()
             stops = []
 
-            for suffix in ("A", "T"):
+            for suffix in ("A", "T", "M"):
                 url = f"https://gtfs.ztp.krakow.pl/GTFS_KRK_{suffix}.zip"
                 try:
                     async with session.get(url, timeout=aiohttp.ClientTimeout(total=30)) as resp:
