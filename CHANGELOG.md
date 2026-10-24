@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Fixed
+- **Vehicle map tiles** — OpenStreetMap instead of CARTO, whose basemaps now need an API key (#35). Tile requests send your Home Assistant's address (origin only, e.g. `https://xyz.ui.nabu.casa`) as the Referer, which OpenStreetMap requires; attribution links open in a new tab
+
 ## [1.6.0] — unreleased
 
 ### New Providers (+8)
